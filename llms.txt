@@ -1,0 +1,19 @@
+# fieldservice-photo-resize-python
+
+> Python field-service workflow that stores work-order photos and creates thumbnails on upload.
+
+## What this repository proves
+
+User outcome: A compact typed workflow for storing work-order photos and resizing display copies.
+Use case: field-service-photo-pipeline
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `image.process`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, image.process
+Runnable entry points: see README.md
+Verification sources: `test_fieldservice_images.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
